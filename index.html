@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QUANTARA - قيد الإنشاء</title>
+
+  <!-- فونتات -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- ستايل مدمج بسيط -->
+  <style>
+    :root{
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --accent: #5F2DED;
+      --muted: #7a7a7a;
+      --shadow: 0 8px 30px rgba(16,24,40,0.06);
+      --radius: 12px;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: 'Tajawal', 'Roboto', sans-serif;
+      background:var(--bg);
+      color:#111827;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      padding:24px;
+    }
+
+    .wrap{
+      width:100%;
+      max-width:800px;
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:32px;
+      display:grid;
+      grid-template-columns: 1fr 360px;
+      gap:28px;
+      align-items:center;
+    }
+
+    /* الجانب النصي */
+    .hero {
+      padding:12px 6px;
+    }
+
+    .brand {
+      display:flex;
+      align-items:center;
+      gap:12px;
+      margin-bottom:10px;
+    }
+
+    .logo-img{
+      width:44px;
+      height:44px;
+      object-fit:contain;
+      border-radius:8px;
+      background:linear-gradient(135deg,#efe9ff,#f6f0ff);
+      display:inline-block;
+    }
+
+    .brand .title-ar{
+      font-size:20px;
+      font-weight:900;
+      line-height:1;
+    }
+
+    .brand .title-en{
+      font-size:13px;
+      color:var(--muted);
+      margin-top:4px;
+      font-weight:500;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    h1.main {
+      margin:18px 0 8px;
+      font-size:24px;
+      color:#0f172a;
+      line-height:1.05;
+    }
+
+    p.lead {
+      color: #374151;
+      margin:0 0 18px;
+      font-size:15px;
+    }
+
+    .note {
+      background:#fff;
+      border:1px solid #f0f0f5;
+      padding:14px;
+      border-radius:10px;
+      color:#374151;
+      font-size:14px;
+      box-shadow: 0 4px 14px rgba(15,23,42,0.02);
+    }
+
+    /* البطاقة اليمنى */
+    .card {
+      background: linear-gradient(180deg, #ffffff, #fbf8ff);
+      border-radius:10px;
+      padding:22px;
+      text-align:center;
+      box-shadow:0 6px 18px rgba(95,45,237,0.06);
+      border: 1px solid rgba(95,45,237,0.06);
+    }
+
+    .card h3 {
+      margin:0 0 10px;
+      font-size:18px;
+      font-weight:700;
+      color:#111827;
+    }
+
+    .card p {
+      margin:0 0 18px;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .btn {
+      display:inline-block;
+      width:100%;
+      padding:12px 14px;
+      border-radius:10px;
+      background:var(--accent);
+      color:#fff;
+      font-weight:700;
+      border:none;
+      cursor:pointer;
+      text-decoration:none;
+      font-size:15px;
+      box-shadow: 0 8px 20px rgba(95,45,237,0.18);
+      transition: transform .12s ease, box-shadow .12s ease;
+    }
+
+    .btn:hover{ transform: translateY(-3px); box-shadow: 0 12px 30px rgba(95,45,237,0.22); }
+
+    /* Footer صغير داخل البطاقة */
+    .card small { display:block; margin-top:12px; color:var(--muted); font-size:13px; }
+
+    /* استجابة */
+    @media (max-width:900px){
+      .wrap { grid-template-columns: 1fr; padding:22px; }
+      .card { order: -1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrap" role="main">
+    <!-- العمود الرئيسي -->
+    <div class="hero" aria-labelledby="main-heading">
+      <div class="brand" aria-hidden="false">
+        <img src="logo.png" alt="شعار QUANTARA" class="logo-img">
+        <div>
+          <div class="title-ar">كونتارا</div>
+          <div class="title-en">QUANTARA</div>
+        </div>
+      </div>
+
+      <h1 id="main-heading" class="main">الصفحة قيد الإنشاء</h1>
+
+      <p class="lead">
+        تم إنشاء الهيكل الأساسي فقط لصفحات تسجيل الدخول وإنشاء الحساب.  
+        نحن نعمل على إكمال باقي أجزاء الموقع قريبًا — شكرًا لصبرك!
+      </p>
+
+      <div class="note" role="note">
+        <strong>ملاحظة:</strong> يمكنك تجربة الدخول الآن باستخدام زر "التجربة الآن" للوصول إلى صفحة تسجيل الدخول.
+      </div>
+    </div>
+
+    <!-- العمود الجانبي (زر الدخول) -->
+    <aside class="card" aria-label="لوحة التجربة">
+      <h3>جاهز للتجربة؟</h3>
+      <p>زر التجربة يأخذك مباشرة إلى صفحة تسجيل الدخول لاختبار النموذج الذي تم إنشاؤه.</p>
+
+      <!-- الزر يأخذ المستخدم إلى صفحة تسجيل الدخول (login.html) -->
+      <a href="login.html" class="btn" title="التجربة الآن">التجربة الآن</a>
+
+      <small>إذا لم تقم بإنشاء صفحة تسجيل الدخول بعد، أنشئ ملف <code>login.html</code> في نفس المجلد.</small>
+    </aside>
+  </div>
+
+</body>
+</html>

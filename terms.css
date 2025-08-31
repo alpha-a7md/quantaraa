@@ -1,0 +1,90 @@
+/* إعدادات عامة */
+body {
+  font-family: 'Tajawal', sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* الحاوية */
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  border-radius: 15px;
+}
+
+/* الهيدر */
+.header {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #eee;
+}
+
+.header .logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 28px;
+  color: #1a73e8;
+  font-weight: 900;
+}
+
+/* المحتوى */
+.content .intro {
+  font-size: 18px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #555;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  font-size: 22px;
+  color: #1a73e8;
+  margin-bottom: 10px;
+  border-right: 4px solid #1a73e8;
+  padding-right: 10px;
+}
+
+section p, section ul {
+  margin: 8px 0;
+}
+
+ul {
+  padding-right: 20px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+/* نص النهاية */
+.footer-text {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  color: #444;
+  background: #f1f1f1;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+/* الفوتر */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #666;
+  border-top: 2px solid #eee;
+}

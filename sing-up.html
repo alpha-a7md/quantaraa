@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب - QUANTARA</title>
+    <link rel="icon" type="png" href="logo.png"/>
+
+    <!-- استيراد فونتات -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style-sing-up.css">
+</head>
+<body>
+    <div class="container">
+        <!-- الهيدر والشعار -->
+        <header>
+            <div class="logo">
+        <!-- مكان الصورة -->
+        <img src="logo.png" alt="Logo" class="logo-img">
+
+        <!-- النصوص -->
+        <div class="text">
+            <h1 class="arabic">كونتارا</h1>
+            <h4 class="english">QUANTARA</h4>
+        </div>
+    </div>
+    <h2>تسجيل الدخول</h2>
+        </header>
+
+        <!-- نموذج إنشاء الحساب -->
+        <form class="signup-form">
+            <label for="firstName">الاسم الأول</label>
+            <input type="text" id="firstName" name="firstName" placeholder="أدخل الاسم الأول">
+
+            <label for="lastName">الاسم الأخير</label>
+            <input type="text" id="lastName" name="lastName" placeholder="أدخل الاسم الأخير">
+
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" placeholder="أدخل البريد الإلكتروني">
+
+            <label for="phone">رقم الهاتف</label>
+            <input type="tel" id="phone" name="phone" placeholder="أدخل رقم الهاتف">
+
+            <label for="username">اسم المستخدم</label>
+            <input type="text" id="username" name="username" placeholder="أدخل اسم المستخدم">
+
+            <label for="password">كلمة المرور</label>
+            <input type="password" id="password" name="password" placeholder="أدخل كلمة المرور">
+
+            <label for="confirmPassword">تأكيد كلمة المرور</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="أعد كتابة كلمة المرور">
+
+            <p class="note">
+                بالتسجيل أقر بأني قرأت 
+                <a href="terms.html" class="link">شروط الاستخدام</a> وأوافق عليها
+            </p>
+
+            <button type="submit" class="signup-btn">إنشاء الحساب</button>
+
+            <p class="login-text">
+                لديك حساب بالفعل؟ 
+                <a href="login.html" class="link">تسجيل الدخول</a>
+            </p>
+        </form>
+
+        <!-- الفوتر -->
+        <footer>
+            جميع الحقوق محفوظة لـ QUANTARA © 2025
+        </footer>
+    </div>
+</body>
+</html>

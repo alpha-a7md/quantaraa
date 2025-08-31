@@ -1,0 +1,140 @@
+/* Reset بسيط */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 400px;
+    padding: 35px;
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* شعار كونتارا */
+header .logo {
+    display: flex;
+    align-items: center;       /* توسيط عمودي للنصوص مع الصورة */
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+header .logo-img {
+    width: 40px;               /* نفس حجم صفحة تسجيل الدخول */
+    height: 40px;
+    object-fit: contain;
+}
+
+header .logo .text {
+    display: flex;
+    flex-direction: column;    
+    align-items: flex-start;   
+    gap: 2px;
+}
+
+header .logo .text h1.arabic {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+header .logo .text h4.english {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #555;
+}
+
+header h2 {
+    margin: 18px 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* نموذج إنشاء الحساب */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: right;
+}
+
+.signup-form label {
+    font-size: 13px;
+    color: #888;
+    text-align: right;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="tel"],
+.signup-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: right;
+    direction: rtl;
+}
+
+/* ملحوظة الشروط */
+.note {
+    font-size: 12px;
+    color: #888;
+}
+
+.note .link {
+    color: #5F2DED;
+    text-decoration: none;
+}
+
+/* زر إنشاء الحساب */
+.signup-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #5F2DED;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.signup-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* رابط تسجيل الدخول */
+.login-text {
+    font-size: 12px;
+    color: #888;
+}
+
+.login-text .link {
+    color: #5F2DED;
+    text-decoration: none;
+}
+
+/* الفوتر */
+footer {
+    margin-top: 25px;
+    font-size: 10px;
+    color: #aaa;
+}

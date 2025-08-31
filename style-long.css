@@ -1,0 +1,140 @@
+/* Reset بسيط */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 400px;
+    padding: 35px;
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-3px);
+}
+
+header .logo {
+    display: flex;
+    align-items: center; /* توسيط عمودي للنصوص مع الصورة */
+    justify-content: center;
+    gap: 12px; /* مسافة بين الصورة والنصوص */
+    margin-bottom: 20px;
+}
+
+header .logo-img {
+    width: 50px; /* عرض الصورة */
+    height: 50px; /* ارتفاع الصورة */
+    object-fit: contain; /* تحافظ على نسب الصورة */
+}
+
+header .logo .text {
+    display: flex;
+    flex-direction: column; /* ترتيب كونتارا فوق QUANTARA */
+    align-items: flex-start; /* النصوص تبدأ من جهة اليمين */
+    gap: 2px;
+}
+
+header .logo .text h1.arabic {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 900;
+    font-size: 26px;
+}
+
+header .logo .text h4.english {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #555;
+}
+
+/* نموذج تسجيل الدخول */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: right;
+}
+
+.login-form label {
+    font-size: 13px;
+    color: #888;
+    text-align: right;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: right;
+    direction: rtl;
+}
+
+/* خيارات إضافية */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.options a {
+    color: #5F2DED;
+    text-decoration: none;
+}
+
+.options .remember input {
+    margin-left: 5px;
+}
+
+/* زر تسجيل الدخول */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #563DF5;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.signup-text {
+    font-size: 12px;
+    color: #888;
+}
+
+.signup-text a {
+    color: #5F2DED;
+    text-decoration: none;
+}
+
+/* الفوتر */
+footer {
+    margin-top: 25px;
+    font-size: 10px;
+    color: #aaa;
+}
